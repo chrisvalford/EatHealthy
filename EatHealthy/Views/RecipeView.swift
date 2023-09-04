@@ -18,7 +18,7 @@ struct RecipeView: View {
     @State private var ingredientInfos: [IngredientInfo] = []
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(alignment: .leading) {
                 Text(recipe?.headline ?? "")
                     .font(.headline)
