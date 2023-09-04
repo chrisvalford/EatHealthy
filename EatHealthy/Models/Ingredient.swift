@@ -11,7 +11,7 @@ import SwiftData
 @Model
 final class Ingredient {
     let id: UUID
-    let name: String
+    var name: String
     var group: Int = IngredientGroup.other.rawValue
     var alternatives: [Ingredient] = []
 

@@ -32,6 +32,7 @@
 		2F90CE732AA624890038CA8D /* IngredientGroupPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90CE722AA624890038CA8D /* IngredientGroupPicker.swift */; };
 		2F90CE752AA62AC40038CA8D /* IngredientsPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90CE742AA62AC40038CA8D /* IngredientsPreview.swift */; };
 		2F90CE772AA647900038CA8D /* FilteredIngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90CE762AA647900038CA8D /* FilteredIngredientList.swift */; };
+		2F90CE792AA658A30038CA8D /* IngredientDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90CE782AA658A30038CA8D /* IngredientDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		2F90CE722AA624890038CA8D /* IngredientGroupPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientGroupPicker.swift; sourceTree = "<group>"; };
 		2F90CE742AA62AC40038CA8D /* IngredientsPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsPreview.swift; sourceTree = "<group>"; };
 		2F90CE762AA647900038CA8D /* FilteredIngredientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredIngredientList.swift; sourceTree = "<group>"; };
+		2F90CE782AA658A30038CA8D /* IngredientDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				2F90CE702AA5F3F80038CA8D /* IngredientList.swift */,
 				2F90CE722AA624890038CA8D /* IngredientGroupPicker.swift */,
 				2F90CE762AA647900038CA8D /* FilteredIngredientList.swift */,
+				2F90CE782AA658A30038CA8D /* IngredientDetail.swift */,
 			);
 			path = Ingredient;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F90CE792AA658A30038CA8D /* IngredientDetail.swift in Sources */,
 				2F90CE642AA5DB9E0038CA8D /* IngredientInfo.swift in Sources */,
 				2F90CE672AA5E0F90038CA8D /* String+Localization.swift in Sources */,
 				2F3C4E1D2AA4D6E700BF6BDF /* RecipeView.swift in Sources */,

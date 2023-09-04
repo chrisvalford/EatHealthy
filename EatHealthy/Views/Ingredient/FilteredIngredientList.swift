@@ -27,9 +27,12 @@ struct FilteredIngredientList: View {
         VStack {
             List {
                 ForEach(ingredients) { ingredient in
-                    HStack {
+                    NavigationLink {
+                        //IngredientDetail(ingredient: ingredient)
+                        IngredientDetail(ingredient: ingredient)
+                    } label: {
                         Text(ingredient.name)
-                        Spacer()
+                            .font(.headline)
                     }
                 }
                 .onDelete(perform: deleteItems)

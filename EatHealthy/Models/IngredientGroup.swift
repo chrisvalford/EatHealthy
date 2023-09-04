@@ -48,6 +48,32 @@ enum IngredientGroup: Int, Codable, CaseIterable, CustomStringConvertible {
         }
     }
 
+    var text: String {
+        switch self {
+        case .vegetable:
+            return "vegetables".localizedString
+        case .fruit:
+            return "fruits".localizedString
+        case .meat:
+            return "meat cuts".localizedString
+        case .fish:
+            return "fishes and cuts".localizedString
+        case .shellfish:
+            return "shellfish".localizedString
+        case .legume:
+            return "legumes and beans".localizedString
+        case .grain:
+            return "grains".localizedString
+        case .dairy:
+            return "dairy products".localizedString
+        case .spice:
+            return "herbs and spices".localizedString
+        case .other:
+            return "everything else".localizedString
+
+        }
+    }
+
     var icon: Image {
         switch self {
         case .vegetable:
