@@ -25,7 +25,7 @@ struct EatHealthyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IngredientList()
         }
         .modelContainer(sharedModelContainer)
     }

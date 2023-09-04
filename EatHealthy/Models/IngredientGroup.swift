@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum IngredientGroup: Int, Codable, CaseIterable, CustomStringConvertible {
     case vegetable = 0
@@ -16,6 +17,8 @@ enum IngredientGroup: Int, Codable, CaseIterable, CustomStringConvertible {
     case legume = 6
     case grain = 7
     case dairy = 8
+    case spice = 9
+    case other = 10
 
     var id: Self { self }
 
@@ -37,6 +40,36 @@ enum IngredientGroup: Int, Codable, CaseIterable, CustomStringConvertible {
             return "grain".localizedString
         case .dairy:
             return "dairy".localizedString
+        case .spice:
+            return "spice".localizedString
+        case .other:
+            return "other".localizedString
+
+        }
+    }
+
+    var icon: Image {
+        switch self {
+        case .vegetable:
+            return Image("icon.vegetable")
+        case .fruit:
+            return Image("icon.fruit")
+        case .meat:
+            return Image("icon.meat")
+        case .fish:
+            return Image("icon.fish")
+        case .shellfish:
+            return Image("icon.shellfish")
+        case .legume:
+            return Image("icon.legume")
+        case .grain:
+            return Image("icon.grain")
+        case .dairy:
+            return Image("icon.dairy")
+        case .spice:
+            return Image("icon.grain")
+        case .other:
+            return Image("icon.grain")
         }
     }
 }

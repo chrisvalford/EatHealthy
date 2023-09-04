@@ -12,7 +12,7 @@ import SwiftData
 final class Ingredient {
     let id: UUID
     let name: String
-    var group: IngredientGroup?
+    var group: Int = IngredientGroup.other.rawValue
     var alternatives: [Ingredient] = []
 
     @Relationship(deleteRule: .cascade)
