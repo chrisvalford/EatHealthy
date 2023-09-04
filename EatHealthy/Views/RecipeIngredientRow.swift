@@ -15,6 +15,7 @@ struct RecipeIngredientRow: View {
         VStack(alignment: .leading) {
             HStack {
                 Text(info.name)
+                    .font(.headline)
                 Spacer()
                 if info.quantity > 0 {
                     Text("\(info.quantity) \(info.measurement)")

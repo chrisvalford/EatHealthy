@@ -20,14 +20,6 @@ let recipesPreviewContainer: ModelContainer = {
 
             let recipe2 = Recipe(headline: "Broccoli and anchovy pasta")
             context.insert(recipe2)
-
-//            var transactions: [Transaction] = []
-//            for i in 0..<19 {
-//                let value = randomAmount()
-//                let tx = Transaction(note: randomTxType(forValue: value), amount: value, date: TXDate(), hasReceipt: false)
-//                transactions.append(tx)
-//            }
-//            account.transactions = transactions
         }
 
         return container

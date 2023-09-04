@@ -19,18 +19,18 @@ let recipePreviewContainer: ModelContainer = {
             let recipe = Recipe(headline: "Carbonara")
             context.insert(recipe)
 
-
             let pivot1 = IngredientPivot(sequence: 3, quantity: 2, measurement: "Cloves")
             context.insert(pivot1)
             pivot1.recipe = recipe
             let ingredient1 = Ingredient(name: "Garlic")
+            ingredient1.group = .vegetable
             context.insert(ingredient1)
             pivot1.ingredient = ingredient1
-
 
             let pivot2 = IngredientPivot(sequence: 1, quantity: 25, measurement: "g")
             pivot2.recipe = recipe
             let ingredient2 = Ingredient(name: "Pancetta")
+            ingredient2.group = .meat
             context.insert(ingredient2)
             pivot2.ingredient = ingredient2
             let altIngredient2a = Ingredient(name: "Smoked Bacon")
@@ -41,14 +41,13 @@ let recipePreviewContainer: ModelContainer = {
             pivot2.alternatives.append(altIngredient2b)
             context.insert(pivot2)
 
-
             let pivot3 = IngredientPivot(sequence: 2, quantity: 12, measurement: "g")
             context.insert(pivot3)
             pivot3.recipe = recipe
             let ingredient3 = Ingredient(name: "Pecorino Romano")
+            ingredient3.group = .dairy
             context.insert(ingredient3)
             pivot3.ingredient = ingredient3
-
 
             let pivot4 = IngredientPivot(sequence: 4, quantity: 1, measurement: "")
             context.insert(pivot4)
@@ -72,7 +71,6 @@ let recipePreviewContainer: ModelContainer = {
             pivot6.ingredient = ingredient6
 
         }
-
         return container
 
     } catch {
