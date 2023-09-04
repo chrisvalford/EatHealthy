@@ -23,6 +23,7 @@
 		2F3C4E1D2AA4D6E700BF6BDF /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C4E1C2AA4D6E700BF6BDF /* RecipeView.swift */; };
 		2F3C4E1F2AA4D88400BF6BDF /* RecipePrieview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C4E1E2AA4D88400BF6BDF /* RecipePrieview.swift */; };
 		2F90CE5F2AA598370038CA8D /* RecipeIngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90CE5E2AA598370038CA8D /* RecipeIngredientRow.swift */; };
+		2F90CE642AA5DB9E0038CA8D /* IngredientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90CE632AA5DB9E0038CA8D /* IngredientInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2F3C4E1C2AA4D6E700BF6BDF /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		2F3C4E1E2AA4D88400BF6BDF /* RecipePrieview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePrieview.swift; sourceTree = "<group>"; };
 		2F90CE5E2AA598370038CA8D /* RecipeIngredientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientRow.swift; sourceTree = "<group>"; };
+		2F90CE632AA5DB9E0038CA8D /* IngredientInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				2F3C4E122AA4CBE400BF6BDF /* Recipe.swift */,
 				2F3C4E142AA4CCFF00BF6BDF /* Ingredient.swift */,
 				2F3C4E162AA4CDB700BF6BDF /* IngredientPivot.swift */,
+				2F90CE632AA5DB9E0038CA8D /* IngredientInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F90CE642AA5DB9E0038CA8D /* IngredientInfo.swift in Sources */,
 				2F3C4E1D2AA4D6E700BF6BDF /* RecipeView.swift in Sources */,
 				2F3C4DE62AA4CB7A00BF6BDF /* ContentView.swift in Sources */,
 				2F3C4E172AA4CDB700BF6BDF /* IngredientPivot.swift in Sources */,

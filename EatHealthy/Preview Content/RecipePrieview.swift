@@ -29,7 +29,6 @@ let recipePreviewContainer: ModelContainer = {
 
 
             let pivot2 = IngredientPivot(sequence: 1, quantity: 25, measurement: "g")
-            context.insert(pivot2)
             pivot2.recipe = recipe
             let ingredient2 = Ingredient(name: "Pancetta")
             context.insert(ingredient2)
@@ -40,6 +39,7 @@ let recipePreviewContainer: ModelContainer = {
             let altIngredient2b = Ingredient(name: "Lardons")
             context.insert(altIngredient2b)
             pivot2.alternatives.append(altIngredient2b)
+            context.insert(pivot2)
 
 
             let pivot3 = IngredientPivot(sequence: 2, quantity: 12, measurement: "g")

@@ -12,7 +12,7 @@ import SwiftData
 final class Ingredient {
     let id: UUID
     let name: String
-    var alternatives: [Ingredient]?
+    var alternatives: [Ingredient] = []
 
     @Relationship(deleteRule: .cascade)
     var pivots: [IngredientPivot] = []

@@ -8,45 +8,29 @@
 import SwiftUI
 
 struct RecipeIngredientRow: View {
-    var pivot: IngredientPivot
+    var info: IngredientInfo
     @State private var isShowingAlternatives: Bool = false
 
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                if pivot.alternatives.count > 0 {
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Text(pivot.ingredient?.name ?? "")
-                            Button {
-                                isShowingAlternatives.toggle()
-                            } label: {
-                                Image(systemName: isShowingAlternatives ? "chevron.up.circle" : "chevron.down.circle")
-                            }
-                        }
-                        if isShowingAlternatives {
-                            List {
-                                Text("Alternative1")
-                                Text("Alternative3")
-                            }
-                        }
-                    }
-                } else {
-                    Text(pivot.ingredient?.name ?? "")
-                }
+                Text(info.name)
                 Spacer()
-                if pivot.quantity > 0 {
-                    Text("\(pivot.quantity) \(pivot.measurement)")
+                if info.quantity > 0 {
+                    Text("\(info.quantity) \(info.measurement)")
                 } else {
-                    Text(pivot.measurement)
+                    Text(info.measurement)
                 }
             }
         }
-        .frame(height: CGFloat(pivot.alternatives.count * 32))
     }
 }
 
-//#Preview {
-//    RecipeIngredientRow()
-//        .modelContainer(recipePreviewContainer)
-//}
+#Preview {
+    RecipeIngredientRow(info: IngredientInfo(id: UUID(),
+                                             sequence: 0,
+                                             name: "Bannana",
+                                             quantity: 3,
+                                             measurement: " "))
+        .modelContainer(recipePreviewContainer)
+}
